@@ -51,6 +51,6 @@ case 'sexo/update':
 
 
     default:
-        echo "Error 404: Página no encontrada.";
+        echo "Error 404: Página no encontrada .";
         break;
 }
