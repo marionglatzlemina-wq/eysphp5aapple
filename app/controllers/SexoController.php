@@ -49,10 +49,10 @@ public function create() {
 }
 
 
-public function edit($id) {
+public function edit($idsexo) {
 
 // Pasar el ID al modelo antes de llamar a readOne()
-        $this->sexo->id = $id;
+        $this->sexo->idsexo = $idsexo;
         $sexo = $this->sexo->readOne();
 
         if (!$sexo) {

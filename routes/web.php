@@ -18,7 +18,7 @@ switch ($route) {
         $controller->index();
         break;
 
-    case 'sexo/edit':
+    case 'idsexo/edit':
         if (isset($_GET['idsexo'])) {
             $controller->edit($_GET['idsexo']);
         } else {
