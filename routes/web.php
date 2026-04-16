@@ -18,16 +18,16 @@ switch ($route) {
         $controller->index();
         break;
 
-    case 'idsexo/edit':
-        if (isset($_GET['idsexo'])) {
-            $controller->edit($_GET['idsexo']);
+    case 'sexo/edit':
+        if (isset($_GET['sexo'])) {
+            $controller->edit($_GET['sexo']);
         } else {
             echo "Error: Falta el ID para editar.";
         }
         break;
     case 'sexo/eliminar':
-        if (isset($_GET['idsexo'])) {
-            $controller->eliminar($_GET['idsexo']);
+        if (isset($_GET['sexo'])) {
+            $controller->eliminar($_GET['sexo']);
         } else {
             echo "Error: Falta el ID para editar.";
         }
