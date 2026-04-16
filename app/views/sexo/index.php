@@ -24,13 +24,13 @@
             <?php if (!empty($sexos) && is_array($sexos)): ?>
                 <?php foreach ($sexos as $sexo): ?>
                     <tr>
-                        <td><?php echo htmlspecialchars($sexo['id']); ?></td>
+                        <td><?php echo htmlspecialchars($sexo['idsexo']); ?></td>
                         <td><?php echo htmlspecialchars($sexo['nombre']); ?></td>
                         <td>
-    <a href="/eysphp5aapple/public/sexo/edit?id=<?php echo htmlspecialchars($sexo['id']); ?>">
+    <a href="/eysphp5aapple/public/sexo/edit?idsexo=<?php echo htmlspecialchars($sexo['id']); ?>">
         <button>Editar</button>
     </a>
-    <a href="/eysphp5aapple/public/sexo/eliminar?id=<?php echo htmlspecialchars($sexo['id']); ?>" 
+    <a href="/eysphp5aapple/public/sexo/eliminar?idsexo=<?php echo htmlspecialchars($sexo['id']); ?>" 
        onclick="return confirm('¿Estás seguro de eliminar este registro?');">
         <button>Eliminar</button>
     </a>
