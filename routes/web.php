@@ -19,15 +19,15 @@ switch ($route) {
         break;
 
     case 'sexo/edit':
-        if (isset($_GET['sexo'])) {
-            $controller->edit($_GET['sexo']);
+        if (isset($_GET['id'])) {
+            $controller->edit($_GET['id']);
         } else {
             echo "Error: Falta el ID para editar.";
         }
         break;
     case 'sexo/eliminar':
-        if (isset($_GET['sexo'])) {
-            $controller->eliminar($_GET['sexo']);
+        if (isset($_GET['id'])) {
+            $controller->eliminar($_GET['id']);
         } else {
             echo "Error: Falta el ID para editar.";
         }
