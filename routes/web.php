@@ -13,19 +13,19 @@ $controller = new SexoController();
 
 switch ($route) {
     case '':
-    case 'sexo':
-    case 'sexo/index':
+    case 'idsexo':
+    case 'idsexo/index':
         $controller->index();
         break;
 
-    case 'sexo/edit':
+    case 'idsexo/edit':
         if (isset($_GET['idsexo'])) {
             $controller->edit($_GET['idsexo']);
         } else {
             echo "Error: Falta el ID para editar.";
         }
         break;
-    case 'sexo/eliminar':
+    case 'idsexo/eliminar':
         if (isset($_GET['idsexo'])) {
             $controller->eliminar($_GET['idsexo']);
         } else {
@@ -33,7 +33,7 @@ switch ($route) {
         }
         break;
 	
-case 'sexo/delete':
+case 'idsexo/delete':
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $controller->delete();
     }
@@ -42,7 +42,7 @@ case 'sexo/delete':
 
 
 
-case 'sexo/update':
+case 'id/update':
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $controller->update();
     }
